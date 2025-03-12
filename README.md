@@ -1,6 +1,3 @@
-Here's a `README.md` for the given Streamlit stock valuation app:
-
-```markdown
 # Stock Valuation & 5-Year Projection App
 
 This Streamlit app provides an interactive tool for evaluating stocks and projecting their price over the next five years based on EPS (Earnings Per Share) growth and P/E ratio assumptions. You can input stock tickers and customize key financial metrics to project future stock prices and calculate a target entry price for a desired return.
@@ -73,14 +70,3 @@ If you input "AAPL" as the stock ticker, the app will fetch data for Apple Inc. 
 - P/E Ratio
 - EPS Growth Rate
 - A projection of the stock price over the next 5 years
-
-## Contributing
-
-Feel free to fork the repository, submit issues, or make pull requests. Contributions are welcome!
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-You can adjust or enhance this README to fit your specific project needs!
