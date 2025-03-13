@@ -33,7 +33,11 @@ st.sidebar.write(f"### {stock_data['Company Name']}")
 st.sidebar.write(f"**Last Price:** ${stock_data['Last Price']:.2f}")
 st.sidebar.write(f"**EPS (TTM):** {stock_data['EPS (TTM)']}")
 st.sidebar.write(f"**PE Ratio:** {stock_data['PE Ratio']}")
-st.sidebar.write(f"**EPS Growth Rate:** {stock_data['EPS Growth Rate'] * 100:.2f}%")
+try:
+    eps_growth = float(stock_data['EPS Growth Rate']) * 100
+    st.sidebar.write(f"**EPS Growth Rate:** {eps_growth:.2f}%")
+except ValueError:
+    st.sidebar.write("**EPS Growth Rate:** Data not available")
 
 
 st.sidebar.header("Assumptions")
